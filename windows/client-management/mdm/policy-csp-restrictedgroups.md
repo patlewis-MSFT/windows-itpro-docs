@@ -111,12 +111,21 @@ Starting in Windows 10, version 1809, you can use this schema for retrieval and 
 <!--Example-->
 Here is an example:
 
+For Windows 10, version 1803
+```xml
+<accessgroup desc="Administrators">
+   <member name="Contoso\Alice"/>
+   <member name = "S-188-5-5666-5-688"/>
+</accessgroup>
 ```
+
+For Windows 10, version 1809 or later
+```xml
 <groupmembership>
- <accessgroup desc="Administrators">
-    <member name="Contoso\Alice">
-    <member name = "S-188-5-5666-5-688">
-  </accessgroup>
+   <accessgroup desc="Administrators">
+      <member name="Contoso\Alice"/>
+      <member name = "S-188-5-5666-5-688"/>
+   </accessgroup>
 </groupmembership>
 ```
 <!--/Example-->
@@ -128,10 +137,6 @@ Here is an example:
 
 Footnote:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
-
+-   1 - Added in Windows 10, version 1803
 <!--/Policies-->
 
